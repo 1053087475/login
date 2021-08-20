@@ -13,23 +13,21 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
-        <activity android:name=".index">
-            <intent-filter>
+
                 <data
-                    android:host="localhost"
-                    android:path="/main"
-                    android:port="8080"
+                    android:host="oauth"
+                    android:path="/callback"
                     android:scheme="http" />
 
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-
             </intent-filter>
+        </activity>
+
+        <activity android:name=".index">
         </activity>
     </application>
 
